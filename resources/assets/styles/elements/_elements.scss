@@ -1,0 +1,111 @@
+@import "../base/index";
+
+html {
+  background: $gray-lighter;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  color: $gray-darker;
+  font-family: $font-copy;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+* {
+  outline: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  transition: box-shadow .3s, color .2s;
+  color: $gold;
+  text-decoration: none;
+
+  &:hover {
+    color: $gold-dark;
+    box-shadow: 0 1px 0 currentColor;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 6rem 0 0;
+}
+
+h1 {
+  margin-top: 5.2rem;
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 1.333;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 2rem;
+}
+
+p {
+  margin: 3rem 0;
+}
+
+ul,
+ol,
+li {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+ul,
+ol {
+  padding-left: 2em;
+}
+
+small {
+  font-size: 1.7rem;
+  line-height: 1.333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+blockquote {
+  position: relative;
+  margin: 4rem 0;
+  padding: 0 4rem;
+  color: $gray;
+  font-size: 2.3rem;
+  font-style: italic;
+  line-height: 1.3;
+
+  &::before {
+    position: absolute;
+    top: -1.8rem;
+    left: -1.8rem;
+    color: $gray-light;
+    font-size: 4.5em;
+    content: "“";
+  }
+}

@@ -1,0 +1,41 @@
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if $index {
+
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+// stylelint-disable
+@function uri-encode($string) {
+  $str-01: str-replace($string, "%", "%25");
+  $str-02: str-replace($str-01, " ", "%20");
+  $str-03: str-replace($str-02, "!", "%21");
+  $str-04: str-replace($str-03, "\"", "%22");
+  $str-05: str-replace($str-04, "#", "%23");
+  $str-06: str-replace($str-05, "$", "%24");
+  $str-07: str-replace($str-06, "&", "%26");
+  $str-08: str-replace($str-07, "'", "%27");
+  $str-09: str-replace($str-08, "(", "%28");
+  $str-10: str-replace($str-09, ")", "%29");
+  $str-11: str-replace($str-10, "*", "%2A");
+  $str-12: str-replace($str-11, "+", "%2B");
+  $str-13: str-replace($str-12, ",", "%2C");
+  $str-14: str-replace($str-13, "/", "%2F");
+  $str-15: str-replace($str-14, ":", "%3A");
+  $str-16: str-replace($str-15, ";", "%3B");
+  $str-17: str-replace($str-16, "=", "%3D");
+  $str-18: str-replace($str-17, "?", "%3F");
+  $str-19: str-replace($str-18, "@", "%40");
+  $str-20: str-replace($str-19, "[", "%5B");
+  $str-21: str-replace($str-20, "\\", "%5C");
+  $str-22: str-replace($str-21, "]", "%5D");
+  $str-23: str-replace($str-22, "{", "%7B");
+  $str-24: str-replace($str-23, "|", "%7C");
+
+  @return str-replace($str-24, "}", "%7D");
+}
+// stylelint-enable

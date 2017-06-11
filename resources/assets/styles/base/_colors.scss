@@ -1,0 +1,18 @@
+$gray-hue: 210;
+$gold-hue: 45;
+
+$black: #000;
+$white: #fff;
+
+$gray-darker: hsl($gray-hue, 20%, 35%);
+$gray-dark: hsl($gray-hue, 15%, 50%);
+$gray: hsl($gray-hue, 20%, 65%);
+$gray-light: hsl($gray-hue, 25%, 85%);
+$gray-lighter: hsl($gray-hue, 30%, 95%);
+
+$gold-dark: hsl($gold-hue, 65%, 45%);
+$gold: hsl($gold-hue, 55%, 55%);
+$gold-light: hsl($gold-hue, 70%, 70%);
+$gold-lighter: hsl($gold-hue, 80%, 85%);
+
+$darken-01: rgba(0, 0, 0, .1);
