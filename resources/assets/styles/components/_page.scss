@@ -1,0 +1,96 @@
+@import '../base/index';
+
+.page {
+  padding: 0 1rem 1rem;
+  transition: padding .5s;
+
+  @media screen and #{$mq-min-sm} {
+    padding: 0 2rem 1rem;
+  }
+
+  @media screen and #{$mq-min-md} {
+    padding: 0 8rem 2rem;
+  }
+}
+
+.page-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.page-container--header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-brand {
+  padding: 5rem 0 4rem;
+  text-align: center;
+
+  @media screen and #{$mq-min-md} {
+    padding: $branding-padding;
+  }
+}
+
+.page-brand-name {
+  font-family: $font-brand;
+  font-size: 8rem;
+  line-height: 1.1;
+
+  &,
+  &:hover {
+    color: $gray;
+    box-shadow: none;
+  }
+}
+
+.page-brand-description {
+  color: $gray-dark;
+  font-size: 1.3rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.page-header {
+  font-weight: 400;
+}
+
+.page-container--main {
+  $svg-color: uri-encode(unquote('#{$gold-light}'));
+
+  margin: 3.5rem -1rem;
+  padding: 1px 1rem 1rem;
+  background-color: $white;
+  box-shadow: 0 1px 4px $darken-01;
+
+  @media screen and #{$mq-min-sm} {
+    margin-right: auto;
+    margin-left: auto;
+    border: 1.5rem solid transparent;
+    border-image:
+      url('data:image/svg+xml;utf8,\
+      <svg xmlns="http://www.w3.org/2000/svg"\
+        viewBox="0 0 70 70" width="70" height="70">\
+        <g fill="#{$svg-color}">\
+          <ellipse cx="15" cy="15" rx="4" ry="4"/>\
+          <ellipse cx="35" cy="15" rx="4" ry="4"/>\
+          <ellipse cx="55" cy="15" rx="4" ry="4"/>\
+          <ellipse cx="15" cy="35" rx="4" ry="4"/>\
+          <ellipse cx="55" cy="35" rx="4" ry="4"/>\
+          <ellipse cx="15" cy="55" rx="4" ry="4"/>\
+          <ellipse cx="35" cy="55" rx="4" ry="4"/>\
+          <ellipse cx="55" cy="55" rx="4" ry="4"/>\
+        </g>\
+      </svg>') 25 round;
+    border-radius: .7rem;
+  }
+
+  @media screen and #{$mq-min-md} {
+    padding: 0 3.5rem;
+  }
+
+  @media screen and #{$mq-min-lg} {
+    padding: 0 9rem 4.5rem;
+  }
+}
