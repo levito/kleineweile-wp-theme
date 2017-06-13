@@ -3,15 +3,15 @@ $screen-md: 45em;
 $screen-lg: 60em;
 $screen-px: 1em / 16;
 
-$mq-max-sm: "(max-width: #{$screen-sm})";
-$mq-min-sm: "(min-width: #{$screen-sm + $screen-px})";
-$mq-max-md: "(max-width: #{$screen-md})";
-$mq-min-md: "(min-width: #{$screen-md + $screen-px})";
-$mq-max-lg: "(max-width: #{$screen-lg})";
-$mq-min-lg: "(min-width: #{$screen-lg + $screen-px})";
+$mq-max-sm: '(max-width: #{$screen-sm})';
+$mq-min-sm: '(min-width: #{$screen-sm + $screen-px})';
+$mq-max-md: '(max-width: #{$screen-md})';
+$mq-min-md: '(min-width: #{$screen-md + $screen-px})';
+$mq-max-lg: '(max-width: #{$screen-lg})';
+$mq-min-lg: '(min-width: #{$screen-lg + $screen-px})';
 
-$font-brand: "Amatic SC", "Arial Narrow", sans-serif;
-$font-copy: "Lato", "Helvetica Neue", "Arial", "Helvetica", serif;
+$font-brand: 'Amatic SC', 'Arial Narrow', sans-serif;
+$font-copy: 'Lato', 'Helvetica Neue', 'Arial', 'Helvetica', serif;
 
 $branding-padding-top: 16rem;
 $branding-padding-bottom: 10rem;

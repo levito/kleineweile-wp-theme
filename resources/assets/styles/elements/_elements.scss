@@ -1,4 +1,4 @@
-@import "../base/index";
+@import '../base/index';
 
 html {
   background: $gray-lighter;
@@ -106,6 +106,6 @@ blockquote {
     left: -1.8rem;
     color: $gray-light;
     font-size: 4.5em;
-    content: "“";
+    content: '“';
   }
 }

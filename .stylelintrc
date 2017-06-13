@@ -4,8 +4,16 @@
     "stylelint-config-property-sort-order-smacss"
   ],
   "rules": {
+    "at-rule-empty-line-before": [ "always", {
+      except: [
+        "blockless-after-same-name-blockless",
+        "first-nested",
+      ],
+      ignore: ["after-comment"],
+    } ],
     "indentation": 2,
     "number-leading-zero": null,
-    "selector-pseudo-element-colon-notation": "double"
+    "selector-pseudo-element-colon-notation": "double",
+    "string-quotes": "single",
   }
 }
