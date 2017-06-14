@@ -1,8 +1,7 @@
 @import '../base/index';
 
-.page {
+body.page {
   padding: 0 1rem 1rem;
-  transition: padding .5s;
 
   @media screen and #{$mq-min-sm} {
     padding: 0 2rem 1rem;
@@ -21,6 +20,7 @@
 .page-container--header {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
 }
 
