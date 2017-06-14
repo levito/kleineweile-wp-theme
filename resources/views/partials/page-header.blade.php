@@ -1,1 +1,1 @@
-<h1 class="page-header">{!! App\title() !!}</h1>
+<h1 class="site-header">{!! App\title() !!}</h1>

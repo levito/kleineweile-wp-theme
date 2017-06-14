@@ -10,7 +10,7 @@
   }
 }
 
-.page-header .nav {
+.site-header .nav {
   display: flex;
   flex-wrap: nowrap;
   font-family: $font-brand;
@@ -23,7 +23,7 @@
   }
 }
 
-.page-footer {
+.site-footer {
   text-align: center;
 
   .nav,
