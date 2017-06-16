@@ -44,6 +44,14 @@ textarea {
   }
 }
 
+select {
+  height: 4rem;
+
+  &[multiple] {
+    height: auto;
+  }
+}
+
 button,
 [type='button'],
 [type='reset'],
