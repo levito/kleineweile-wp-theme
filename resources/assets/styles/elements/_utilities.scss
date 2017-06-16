@@ -5,19 +5,20 @@
 .alignnone,
 .aligncenter,
 .alignleft,
-.alignright, {
+.alignright,
+.wp-caption img {
   max-width: 100%;
   height: auto;
-  margin: 3rem 0;
+}
+
+.aligncenter,
+.alignleft,
+.alignright {
+  display: block;
+  margin: 3rem auto;
 }
 
 @media #{$mq-min-sm} {
-
-  .aligncenter {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
 
   .alignleft,
   .alignright {
@@ -37,18 +38,16 @@
 }
 
 // Captions
-// .wp-caption {
-//   @extend .figure;
-// }
+.wp-caption img {
+  display: block;
+}
 
-// .wp-caption img {
-//   @extend .figure-img;
-//   @extend .img-fluid;
-// }
-
-// .wp-caption-text {
-//   @extend .figure-caption;
-// }
+.wp-caption-text {
+  padding-top: .5em;
+  color: $gray-dark;
+  font-size: .75em;
+  font-style: italic;
+}
 
 // Text meant only for screen readers
 .screen-reader-text {
