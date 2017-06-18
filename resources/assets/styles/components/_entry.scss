@@ -1,0 +1,78 @@
+.entry-header {
+  position: relative;
+  margin: 0 0 3rem;
+  font-size: 1.5rem;
+  line-height: 1.333;
+}
+
+.byline,
+.updated {
+  margin: 0;
+  color: $gray;
+  font-style: italic;
+}
+
+@media screen and #{$mq-max-lg} {
+
+  .byline {
+    display: inline;
+  }
+
+  .updated-date {
+
+    &::before {
+      content: 'am ';
+    }
+
+    &::after {
+      content: '.';
+    }
+  }
+}
+
+@media screen and #{$mq-min-lg} {
+
+  .updated {
+    position: absolute;
+    bottom: -1.4rem;
+    left: -13.5rem;
+    width: 9.5rem;
+    padding: 1.4rem 1rem 1.4rem .5rem;
+    background-color: $gray-dark;
+    color: $white;
+    line-height: 1.333;
+    text-align: center;
+    z-index: 100;
+
+    &::before,
+    &::after {
+      position: absolute;
+      right: 0;
+      left: 0;
+      background-color: $gray-dark;
+      content: '';
+      z-index: -1;
+    }
+
+    &::before {
+      top: 0;
+      bottom: 50%;
+      transform: skew(20deg);
+      transform-origin: 0 100%;
+    }
+
+    &::after {
+      top: 50%;
+      bottom: 0;
+      transform: skew(-20deg);
+      transform-origin: 0 0;
+    }
+
+    .updated-date {
+      display: block;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+  }
+}
