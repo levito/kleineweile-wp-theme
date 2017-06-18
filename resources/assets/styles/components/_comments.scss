@@ -2,14 +2,30 @@
 
 .comments {}
 
-.comment-list {
+.comment-list,
+.comment-list .children {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.comment-list .children {
+  padding-left: .8rem;
+  border-left: .2rem solid $gray-light;
+
+  @media screen and #{$mq-min-sm} {
+
+    padding-left: 1.3rem;
+  }
+
+  @media screen and #{$mq-min-lg} {
+
+    padding-left: 1.8rem;
+  }
+}
+
 .comment {
-  margin: 2rem 0 6rem;
+  margin: 2rem 0 4rem;
   font-size: 1.7rem;
   line-height: 1.333;
 }
@@ -23,10 +39,17 @@
   overflow: hidden;
 }
 
-.comment-author .avatar {
-  margin-top: .2rem;
-  margin-right: 1rem;
-  float: left;
+.comment-author {
+
+  .avatar {
+    margin-top: .2rem;
+    margin-right: 1rem;
+    float: left;
+  }
+
+  .says {
+    @include visually-hidden();
+  }
 }
 
 .comment-metadata .edit-link::before {
