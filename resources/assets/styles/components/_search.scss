@@ -6,13 +6,13 @@
     margin-top: 1rem;
   }
 
-  .site-body & {
+  .body & {
     margin: 3rem 0;
   }
 
   @media screen and #{$mq-min-md} {
 
-    .site-header & {
+    .header & {
       width: 30rem;
     }
   }

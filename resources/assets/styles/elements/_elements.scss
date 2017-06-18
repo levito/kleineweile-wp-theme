@@ -7,10 +7,19 @@ html {
 }
 
 body {
+  padding: 0 1rem 1rem;
   color: $gray-darker;
   font-family: $font-copy;
   font-size: 2rem;
   line-height: 1.5;
+
+  @media screen and #{$mq-min-sm} {
+    padding: 0 2rem 1rem;
+  }
+
+  @media screen and #{$mq-min-md} {
+    padding: 0 8rem 2rem;
+  }
 }
 
 * {

@@ -1,34 +1,18 @@
 @import '../base/index';
 
-.site {
-  padding: 0 1rem 1rem;
-
-  @media screen and #{$mq-min-sm} {
-    padding: 0 2rem 1rem;
-  }
-
-  @media screen and #{$mq-min-md} {
-    padding: 0 8rem 2rem;
-  }
-}
-
-.site-container {
+.container {
   max-width: 1170px;
   margin: 0 auto;
 }
 
-.site-container--header {
+.container--header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.site-header {
-  font-weight: 400;
-}
-
-.site-container--body {
+.container--body {
   $svg-color: uri-encode(unquote('#{$gold-light}'));
 
   margin: 3.5rem -1rem;

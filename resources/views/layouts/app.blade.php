@@ -1,11 +1,11 @@
 <!doctype html>
 <html @php(language_attributes())>
   @include('partials.head')
-  <body @php(body_class('site'))>
+  <body @php(body_class())>
     @php(do_action('get_header'))
     @include('partials.header')
-    <div class="site-body" role="document">
-      <div class="site-container site-container--body">
+    <div class="body" role="document">
+      <div class="container container--body">
         <main class="main">
           @yield('content')
         </main>
