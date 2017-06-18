@@ -6,8 +6,15 @@
     margin-top: 1rem;
   }
 
+  .site-body & {
+    margin: 3rem 0;
+  }
+
   @media screen and #{$mq-min-md} {
-    width: 30rem;
+
+    .site-header & {
+      width: 30rem;
+    }
   }
 
   > label {
