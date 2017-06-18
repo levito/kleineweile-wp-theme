@@ -1,0 +1,29 @@
+@import '../base/index';
+
+.brand {
+  padding: 5rem 0 4rem;
+  text-align: center;
+
+  @media screen and #{$mq-min-md} {
+    padding: $branding-padding;
+  }
+}
+
+.brand-name {
+  font-family: $font-brand;
+  font-size: 8rem;
+  line-height: 1.1;
+
+  &,
+  &:hover {
+    color: $gray;
+    box-shadow: none;
+  }
+}
+
+.brand-description {
+  color: $gray-dark;
+  font-size: 1.3rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}

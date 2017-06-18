@@ -24,34 +24,6 @@
   justify-content: space-between;
 }
 
-.site-brand {
-  padding: 5rem 0 4rem;
-  text-align: center;
-
-  @media screen and #{$mq-min-md} {
-    padding: $branding-padding;
-  }
-}
-
-.site-brand-name {
-  font-family: $font-brand;
-  font-size: 8rem;
-  line-height: 1.1;
-
-  &,
-  &:hover {
-    color: $gray;
-    box-shadow: none;
-  }
-}
-
-.site-brand-description {
-  color: $gray-dark;
-  font-size: 1.3rem;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-}
-
 .site-header {
   font-weight: 400;
 }
