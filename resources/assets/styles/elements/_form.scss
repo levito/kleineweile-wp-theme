@@ -28,8 +28,8 @@
 [type='url'],
 select,
 textarea {
+  display: block;
   width: 100%;
-  margin-bottom: .5rem;
   padding: .8rem 1.2rem;
   transition: border-color .2s;
   border: 1px solid $gray-light;
