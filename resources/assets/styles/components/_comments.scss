@@ -32,11 +32,11 @@
 
 .comment .reply,
 .comment-meta {
+  @include clearfix();
   color: $gray;
   font-size: 1.5rem;
   font-style: italic;
   line-height: 1.333;
-  overflow: hidden;
 }
 
 .comment-author {
