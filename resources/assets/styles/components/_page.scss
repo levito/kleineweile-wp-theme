@@ -1,5 +1,14 @@
 @import '../base/index';
 
+// Common page styles
 .page-header {
   font-weight: 400;
+}
+
+// Homepage
+.home {
+
+  .page-header {
+    display: none;
+  }
 }
