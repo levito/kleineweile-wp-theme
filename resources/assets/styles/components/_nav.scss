@@ -1,25 +1,28 @@
 @import '../base/index';
 
-.nav {
+.menu {
   margin: 0;
   padding: 0;
   list-style: none;
-
-  .menu-item {
-    margin: 0;
-  }
-
-  .menu-item.active a {
-    color: $gray-darker;
-  }
 }
 
-.header .nav {
-  display: flex;
-  flex-wrap: nowrap;
-  font-family: $font-brand;
-  font-size: 2em;
-  line-height: 1;
+.menu-item {
+  margin: 0;
+}
+
+.menu-item.active a {
+  color: $gray-darker;
+}
+
+.header {
+
+  .menu {
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: $font-brand;
+    font-size: 2em;
+    line-height: 1;
+  }
 
   .menu-item {
     margin-right: 3rem;
@@ -28,14 +31,13 @@
 }
 
 .footer {
-  text-align: center;
 
-  .nav,
-  .menu-item {
-    display: inline-block;
+  .menu {
+    text-align: center;
   }
 
   .menu-item {
+    display: inline-block;
     padding: 0 1rem;
     font-size: 1.7rem;
     line-height: 1.333;

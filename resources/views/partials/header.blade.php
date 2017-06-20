@@ -6,7 +6,7 @@
   <div class="container container--header">
     <nav class="nav-primary">
       @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
+        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'menu']) !!}
       @endif
     </nav>
     {!! get_search_form() !!}
