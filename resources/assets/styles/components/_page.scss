@@ -12,3 +12,46 @@
     display: none;
   }
 }
+
+// Single post
+.single {
+
+  .entry-content p:first-child::first-letter {
+    margin: .06em .2em -.06em 0;
+    float: left;
+    font-size: 3em;
+    line-height: 1;
+  }
+
+  .entry-header {
+    text-align: center;
+  }
+
+  @media #{$mq-min-lg} {
+
+    .entry-header {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 8rem;
+    }
+
+    .page-header {
+      order: 1;
+      margin-top: 2rem;
+      font-size: 6rem;
+    }
+
+    .byline {
+      margin-top: 10rem;
+      font-size: 1.3rem;
+      font-style: normal;
+      letter-spacing: .1rem;
+      text-transform: uppercase;
+    }
+
+    .updated {
+      top: 12.5rem;
+      bottom: auto;
+    }
+  }
+}
