@@ -2,37 +2,23 @@
 
 .search-form {
   display: flex;
-
-  @media screen and #{$mq-max-md} {
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  .body & {
-    margin: 3rem 0;
-  }
-
-  @media screen and #{$mq-min-md} {
-
-    .header & {
-      width: 30rem;
-    }
-  }
+  flex: 1 0 30rem;
+  margin-bottom: 2rem;
 
   > label {
     flex: 1;
   }
-}
 
-.search-field.search-field {
-  flex: 1;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
+  .search-field {
+    flex: 1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 
-.search-submit.search-submit {
-  padding-right: 1rem;
-  padding-left: 1rem;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  .search-submit {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
