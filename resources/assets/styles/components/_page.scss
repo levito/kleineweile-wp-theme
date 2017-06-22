@@ -17,7 +17,7 @@
 .single {
 
   .entry-content p:first-child::first-letter {
-    margin: .06em .2em -.06em 0;
+    margin-right: .2em;
     float: left;
     font-size: 3em;
     line-height: 1;
@@ -32,7 +32,7 @@
     .entry-header {
       display: flex;
       flex-direction: column;
-      margin-bottom: 8rem;
+      margin-bottom: 8.5rem;
     }
 
     .page-header {
@@ -42,7 +42,7 @@
     }
 
     .byline {
-      margin-top: 10rem;
+      margin-top: 11rem;
       font-size: 1.3rem;
       font-style: normal;
       letter-spacing: .1rem;
@@ -50,7 +50,7 @@
     }
 
     .updated {
-      top: 12.5rem;
+      top: 14.2rem;
       bottom: auto;
     }
   }
