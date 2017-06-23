@@ -16,7 +16,7 @@
 // Single post
 .single {
 
-  .entry-content p:first-child::first-letter {
+  .entry-content > p:first-child::first-letter {
     margin-right: .2em;
     float: left;
     font-size: 3em;
