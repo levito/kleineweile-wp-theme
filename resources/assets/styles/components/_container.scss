@@ -1,7 +1,7 @@
 @import '../base/index';
 
 .container {
-  max-width: 1170px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
@@ -13,40 +13,36 @@
 }
 
 .container--body {
-  $svg-color: uri-encode(unquote('#{$gold-light}'));
-
   margin: 2rem -1rem 6rem;
   padding: 1px 1rem 2.5rem;
   background-color: $white;
-  box-shadow: 0 1px 4px $darken-01;
+  box-shadow: 0 .1rem .4rem $darken-01;
 
   @media screen and #{$mq-min-sm} {
     margin-right: auto;
     margin-left: auto;
     border: 1.5rem solid transparent;
     border-radius: .7rem;
-
-    @media screen and #{$mq-min-md} {
-      border-image:
-        url('data:image/svg+xml;utf8,\
-        <svg xmlns="http://www.w3.org/2000/svg"\
-          viewBox="0 0 70 70" width="70" height="70">\
-          <g fill="#{$svg-color}">\
-            <ellipse cx="15" cy="15" rx="4" ry="4"/>\
-            <ellipse cx="35" cy="15" rx="4" ry="4"/>\
-            <ellipse cx="55" cy="15" rx="4" ry="4"/>\
-            <ellipse cx="15" cy="35" rx="4" ry="4"/>\
-            <ellipse cx="55" cy="35" rx="4" ry="4"/>\
-            <ellipse cx="15" cy="55" rx="4" ry="4"/>\
-            <ellipse cx="35" cy="55" rx="4" ry="4"/>\
-            <ellipse cx="55" cy="55" rx="4" ry="4"/>\
-          </g>\
-        </svg>') 25 round;
-    }
   }
 
   @media screen and #{$mq-min-md} {
+    $svg-color: uri-encode(unquote('#{$gold-light}'));
     padding: 0 3.5rem 3.5rem;
+    border-image:
+      url('data:image/svg+xml;utf8,\
+      <svg xmlns="http://www.w3.org/2000/svg"\
+        viewBox="0 0 70 70" width="70" height="70">\
+        <g fill="#{$svg-color}">\
+          <ellipse cx="15" cy="15" rx="4" ry="4"/>\
+          <ellipse cx="35" cy="15" rx="4" ry="4"/>\
+          <ellipse cx="55" cy="15" rx="4" ry="4"/>\
+          <ellipse cx="15" cy="35" rx="4" ry="4"/>\
+          <ellipse cx="55" cy="35" rx="4" ry="4"/>\
+          <ellipse cx="15" cy="55" rx="4" ry="4"/>\
+          <ellipse cx="35" cy="55" rx="4" ry="4"/>\
+          <ellipse cx="55" cy="55" rx="4" ry="4"/>\
+        </g>\
+      </svg>') 25 round;
   }
 
   @media screen and #{$mq-min-lg} {

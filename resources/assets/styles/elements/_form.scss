@@ -32,8 +32,8 @@ textarea {
   width: 100%;
   padding: .8rem 1.2rem;
   transition: border-color .2s;
-  border: 1px solid $gray-light;
-  border-radius: 2px;
+  border: .1rem solid $gray-light;
+  border-radius: .2rem;
   outline: 0;
   background: $white;
   font-family: inherit;
@@ -60,7 +60,7 @@ button,
   @include button($gray-light, $gray-dark);
   padding: .9rem 2rem;
   border: 0;
-  border-radius: 2px;
+  border-radius: .2rem;
 
   // reset ui buttons:
   font-family: inherit;
