@@ -68,6 +68,10 @@
 [class^='comment-form-'] {
   order: -1;
   margin: 2rem 0 0;
+
+  > label {
+    @include label-text();
+  }
 }
 
 .comment-notes,

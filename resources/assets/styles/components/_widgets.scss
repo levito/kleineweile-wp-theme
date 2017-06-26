@@ -25,14 +25,12 @@
 }
 
 .widget-title {
+  @include label-text();
   margin: 0 0 1.5rem;
   padding-bottom: .3rem;
   border-bottom: .2rem solid $gray-light;
   color: $gray;
-  font-size: 1.3rem;
   font-weight: 400;
-  letter-spacing: .1em;
-  text-transform: uppercase;
 }
 
 .widget_nav_menu {

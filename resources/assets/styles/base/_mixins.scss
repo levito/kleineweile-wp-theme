@@ -23,3 +23,10 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
+@mixin label-text() {
+  font-size: 1.3rem;
+  letter-spacing: .1em;
+  line-height: 1.333;
+  text-transform: uppercase;
+}
