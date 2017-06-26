@@ -3,7 +3,16 @@
 html {
   background: $gray-lighter;
   font-size: 62.5%;
+  font-size: calc(8px + 4 * ((100vw - 480px) / 960));
   box-sizing: border-box;
+
+  @media screen and #{$mq-max-sm} {
+    font-size: 50%;
+  }
+
+  @media screen and #{$mq-min-xl} {
+    font-size: 75%;
+  }
 }
 
 body {

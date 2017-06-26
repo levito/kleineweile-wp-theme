@@ -17,7 +17,7 @@
 .single {
 
   .entry-content > p:first-child::first-letter {
-    margin-right: .2em;
+    margin: 0 .2em -1px 0;
     float: left;
     font-size: 3em;
     line-height: 1;
