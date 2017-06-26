@@ -1,24 +1,29 @@
 @import '../base/index';
 
 .search-form {
-  display: flex;
+  position: relative;
   flex: 1 0 30rem;
   margin-bottom: 2rem;
 
-  > label {
-    flex: 1;
-  }
-
-  .search-field {
-    flex: 1;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
   .search-submit {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    $svg-color: uri-encode(unquote('#{$gray}'));
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 4rem;
+    padding: 0;
+    border: 1rem solid transparent;
+    background:
+      transparent url('data:image/svg+xml;utf8,\
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">\
+        <g fill="none" stroke="#{$svg-color}" stroke-width="2">\
+          <path d="M22 22l-7-7"/>\
+          <circle cx="9" cy="9" r="8"/>\
+        </g>\
+      </svg>') 50% no-repeat;
+    background-size: contain;
+    text-indent: 101%;
+    overflow: hidden;
   }
 }

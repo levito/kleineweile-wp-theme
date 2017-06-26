@@ -55,8 +55,7 @@ select {
 button,
 [type='button'],
 [type='reset'],
-[type='submit'],
-.search-submit.search-submit {
+[type='submit'] {
   @include button($gray-light, $gray-dark);
   padding: .9rem 2rem;
   border: 0;
@@ -70,6 +69,7 @@ button,
   text-shadow: none;
   box-shadow: none;
   -webkit-font-smoothing: auto; // stylelint-disable
+  cursor: pointer;
 }
 
 [type='submit'] {

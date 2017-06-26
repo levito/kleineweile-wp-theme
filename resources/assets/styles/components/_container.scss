@@ -30,17 +30,16 @@
     padding: 0 3.5rem 3.5rem;
     border-image:
       url('data:image/svg+xml;utf8,\
-      <svg xmlns="http://www.w3.org/2000/svg"\
-        viewBox="0 0 70 70" width="70" height="70">\
+      <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70">\
         <g fill="#{$svg-color}">\
-          <ellipse cx="15" cy="15" rx="4" ry="4"/>\
-          <ellipse cx="35" cy="15" rx="4" ry="4"/>\
-          <ellipse cx="55" cy="15" rx="4" ry="4"/>\
-          <ellipse cx="15" cy="35" rx="4" ry="4"/>\
-          <ellipse cx="55" cy="35" rx="4" ry="4"/>\
-          <ellipse cx="15" cy="55" rx="4" ry="4"/>\
-          <ellipse cx="35" cy="55" rx="4" ry="4"/>\
-          <ellipse cx="55" cy="55" rx="4" ry="4"/>\
+          <circle cx="15" cy="15" r="4"/>\
+          <circle cx="35" cy="15" r="4"/>\
+          <circle cx="55" cy="15" r="4"/>\
+          <circle cx="15" cy="35" r="4"/>\
+          <circle cx="55" cy="35" r="4"/>\
+          <circle cx="15" cy="55" r="4"/>\
+          <circle cx="35" cy="55" r="4"/>\
+          <circle cx="55" cy="55" r="4"/>\
         </g>\
       </svg>') 25 round;
   }
