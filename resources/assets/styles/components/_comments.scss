@@ -25,26 +25,28 @@
 }
 
 .comment {
-  margin: 2rem 0 4rem;
+  margin: 3rem 0 4.5rem;
   font-size: 1.7rem;
   line-height: 1.333;
 }
 
 .comment .reply,
 .comment-meta {
-  @include clearfix();
   color: $gray;
   font-size: 1.5rem;
   font-style: italic;
   line-height: 1.333;
 }
 
-.comment-author {
+.comment-meta {
+  @include clearfix();
 
   .avatar {
-    margin-top: .2rem;
+    width: 4rem;
+    height: 4rem;
     margin-right: 1rem;
     float: left;
+    border-radius: 99px;
   }
 
   .says {
@@ -52,8 +54,15 @@
   }
 }
 
-.comment-metadata .edit-link::before {
-  content: ' — ';
+.comment-metadata {
+
+  > a::before {
+    content: 'am ';
+  }
+
+  .edit-link::before {
+    content: ' — ';
+  }
 }
 
 .comment-content p {

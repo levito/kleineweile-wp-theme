@@ -1,5 +1,6 @@
 @import '../base/index';
 
+// Common nav menu styles
 .menu {
   margin: 0;
   padding: 0;
@@ -14,11 +15,9 @@
   color: $gray-darker;
 }
 
-.header {
-
-  .nav-primary {
-    flex: 99;
-  }
+// Primary navigation in header
+.nav-primary {
+  flex: 99;
 
   .menu {
     display: flex;
@@ -36,6 +35,7 @@
   }
 }
 
+// Secondary navigation in footer widget
 .footer {
 
   .menu {
@@ -50,10 +50,11 @@
   }
 }
 
+// Paging of home, archive, search results etc.
 .nav-links {
   @include clearfix();
   padding-top: .7rem;
-  border-top: .1rem solid $gray-light;
+  border-top: 1px solid $gray-light;
   font-size: 1.7rem;
   line-height: 1.333;
 }
