@@ -44,7 +44,8 @@
   display: block;
 }
 
-.wp-caption-text {
+.wp-caption-text,
+.wp-caption-dd {
   padding-top: .5em;
   color: $gray-dark;
   font-size: .75em;
