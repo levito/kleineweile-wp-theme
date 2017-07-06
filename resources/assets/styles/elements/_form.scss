@@ -1,26 +1,5 @@
 @import '../base/index';
 
-@mixin button($background, $color) {
-  transition: background-color .2s, outline-color .2s;
-  outline: 1px solid transparent;
-  outline-offset: -2px;
-  background: $background;
-  color: $color;
-
-  &:hover {
-    background: lighten($background, 3%);
-  }
-
-  &:active {
-    transition: none;
-    background: darken($background, 3%);
-  }
-
-  &:focus {
-    outline-color: fade-out($color, .3);
-  }
-}
-
 [type='email'],
 [type='password'],
 [type='search'],
@@ -56,20 +35,7 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  @include button($gray-light, $gray-dark);
-  padding: .9rem 2rem;
-  border: 0;
-  border-radius: .2rem;
-
-  // reset ui buttons:
-  font-family: inherit;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: normal;
-  text-shadow: none;
-  box-shadow: none;
-  -webkit-font-smoothing: auto; // stylelint-disable
-  cursor: pointer;
+  @include button();
 }
 
 [type='submit'] {

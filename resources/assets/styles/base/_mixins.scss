@@ -1,3 +1,5 @@
+@import './variables';
+
 @mixin clearfix() {
 
   &::before,
@@ -29,4 +31,43 @@
   letter-spacing: .1em;
   line-height: 1.333;
   text-transform: uppercase;
+}
+
+@mixin button($background: $gray-light, $color: $gray-dark) {
+  padding: .9rem 2rem;
+  transition: background-color .2s, outline-color .2s;
+  border: 0;
+  border-radius: .2rem;
+  outline: 1px solid transparent;
+  outline-offset: -2px;
+  background: $background;
+  color: $color;
+
+  // reset ui buttons:
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: normal;
+  text-shadow: none;
+  box-shadow: none;
+  -webkit-font-smoothing: auto; // stylelint-disable
+  cursor: pointer;
+
+  &:hover {
+    background: lighten($background, 3%);
+  }
+
+  &:active {
+    transition: none;
+    background: darken($background, 3%);
+  }
+
+  &:focus {
+    outline-color: fade-out($color, .3);
+  }
+}
+
+@mixin button-small() {
+  padding: .4rem 1.5rem;
+  font-size: 1.5rem;
 }

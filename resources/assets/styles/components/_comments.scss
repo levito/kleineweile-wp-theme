@@ -91,3 +91,13 @@
   font-style: italic;
   line-height: 1.333;
 }
+
+.comment-reply-title > small {
+  display: block;
+  margin: 1rem 0 0;
+}
+
+#cancel-comment-reply-link {
+  @include button();
+  @include button-small();
+}
