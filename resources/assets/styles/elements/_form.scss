@@ -36,9 +36,10 @@ button,
 [type='reset'],
 [type='submit'] {
   @include button();
+  @include button-secondary();
+  @include button-large();
 }
 
 [type='submit'] {
-  @include button($gray-dark, $white);
-  font-weight: 700;
+  @include button-primary();
 }

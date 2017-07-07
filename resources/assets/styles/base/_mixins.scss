@@ -33,25 +33,20 @@
   text-transform: uppercase;
 }
 
-@mixin button($background: $gray-light, $color: $gray-dark) {
-  padding: .9rem 2rem;
+@mixin button() {
   transition: background-color .2s, outline-color .2s;
   border: 0;
   border-radius: .2rem;
   outline: 1px solid transparent;
   outline-offset: -2px;
+  font-family: inherit;
+  line-height: normal;
+  cursor: pointer;
+}
+
+@mixin button-color($background, $color) {
   background: $background;
   color: $color;
-
-  // reset ui buttons:
-  font-family: inherit;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: normal;
-  text-shadow: none;
-  box-shadow: none;
-  -webkit-font-smoothing: auto; // stylelint-disable
-  cursor: pointer;
 
   &:hover {
     background: lighten($background, 3%);
@@ -65,6 +60,21 @@
   &:focus {
     outline-color: fade-out($color, .3);
   }
+}
+
+@mixin button-primary() {
+  @include button-color($gray-dark, $white);
+  font-weight: 700;
+}
+
+@mixin button-secondary() {
+  @include button-color($gray-light, $gray-dark);
+  font-weight: 400;
+}
+
+@mixin button-large() {
+  padding: .9rem 2rem;
+  font-size: 2rem;
 }
 
 @mixin button-small() {

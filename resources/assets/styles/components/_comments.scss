@@ -99,5 +99,6 @@
 
 #cancel-comment-reply-link {
   @include button();
+  @include button-secondary();
   @include button-small();
 }
